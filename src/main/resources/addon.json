@@ -1,0 +1,10 @@
+
+{
+  "uuid": "%uuid%",
+  "name": "ChatCopied",
+  "mainClass": "pl.wiktorekx.chatcopied.ChatCopied",
+  "description": "Copy Message with Chat",
+  "version": 2,
+  "author": "wiktorekx",
+  "category": 2
+}
