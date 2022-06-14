@@ -49,7 +49,7 @@ public class ChatCopiedListeners implements MessageModifyChatEvent {
     }
 
     private String getDefaultInputFieldText(GuiScreen guiScreen) throws IllegalAccessException {
-        Field field = ReflectionHelper.findField(GuiChat.class, "field_146409_v", "defaultInputFieldText");
+        Field field = ReflectionHelper.findField(GuiChat.class, "u", "field_146409_v", "defaultInputFieldText");
         field.setAccessible(true);
         return (String) field.get(guiScreen);
     }
