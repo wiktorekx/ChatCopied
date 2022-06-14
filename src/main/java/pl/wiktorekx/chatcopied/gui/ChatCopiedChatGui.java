@@ -27,30 +27,4 @@ public class ChatCopiedChatGui extends GuiChatCustom {
         }
         return false;
     }
-
-    //    private int getChatValueOf(int height) throws NoSuchFieldException, IllegalAccessException {
-//        GuiNewChat guiNewChat = this.mc.ingameGUI.getChatGUI();
-//        if(guiNewChat.getChatOpen()){
-//            if(guiNewChat.getChatComponent(0, height) != null) {
-//                Field field = GuiNewChat.class.getDeclaredField("scrollPos");
-//                field.setAccessible(true);
-//                int scrollPos = field.getInt(guiNewChat);
-//                ScaledResolution scaledresolution = new ScaledResolution(this.mc);
-//                int lineChatHeight = MathHelper.floor_float((float) (height / scaledresolution.getScaleFactor() - 27) / guiNewChat.getChatScale());
-//                int lineCount = guiNewChat.getLineCount();
-//                if (lineChatHeight >= 0 && lineChatHeight < this.mc.fontRendererObj.FONT_HEIGHT * lineCount + lineCount) {
-//                    return lineChatHeight / this.mc.fontRendererObj.FONT_HEIGHT + scrollPos;
-//                }
-//            }
-//        }
-//        return -1;
-//    }
-//
-//    @Override
-//    public void drawScreen(int mouseX, int mouseY, float partialTicks) {
-//        super.drawScreen(mouseX, mouseY, partialTicks);
-////        IChatComponent ichatcomponent = this.mc.ingameGUI.getChatGUI().getChatComponent(Mouse.getX(), Mouse.getY());
-////        this.mc.ingameGUI.getChatGUI().printChatMessageWithOptionalDeletion(ichatcomponent, 1);
-////        System.out.println(this.mc.ingameGUI.getChatGUI().getSentMessages());
-//    }
 }

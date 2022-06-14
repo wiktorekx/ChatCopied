@@ -9,6 +9,7 @@ import net.minecraft.util.IChatComponent;
 import net.minecraftforge.client.event.GuiOpenEvent;
 import net.minecraftforge.fml.common.eventhandler.EventPriority;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.relauncher.ReflectionHelper;
 import pl.wiktorekx.chatcopied.ChatCopied;
 import pl.wiktorekx.chatcopied.gui.ChatCopiedChatGui;
 
@@ -47,8 +48,8 @@ public class ChatCopiedListeners implements MessageModifyChatEvent {
         }
     }
 
-    private String getDefaultInputFieldText(GuiScreen guiScreen) throws NoSuchFieldException, IllegalAccessException {
-        Field field = GuiChat.class.getDeclaredField("defaultInputFieldText");
+    private String getDefaultInputFieldText(GuiScreen guiScreen) throws IllegalAccessException {
+        Field field = ReflectionHelper.findField(GuiChat.class, "field_146409_v", "defaultInputFieldText");
         field.setAccessible(true);
         return (String) field.get(guiScreen);
     }

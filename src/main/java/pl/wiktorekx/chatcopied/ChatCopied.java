@@ -25,7 +25,6 @@ public class ChatCopied extends LabyModAddon {
         ChatCopiedListeners chatCopiedListeners = new ChatCopiedListeners(this);
         getApi().getEventManager().register(chatCopiedListeners);
         getApi().registerForgeListener(chatCopiedListeners);
-//        getApi().registerModule(new CopyChatInfoModule());
     }
 
     @Override
